@@ -1,0 +1,9 @@
+#!/bin/bash
+
+url=$1
+python3 simple-ytdl.py -d $url
+
+value=$(<out.txt)
+echo "$value"
+xdg-open "$value"
+read -p "Press any key to exit..."
