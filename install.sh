@@ -5,11 +5,11 @@ termux-setup-storage
 sleep 5
 
 #Clean Install
-if [[ ! -d bin ]]; then
-  mkdir bin
+if [[ ! -d ~/bin ]]; then
+  mkdir ~/bin
 fi 
-if [[ -e bin\\termux-url-opener ]]; then
-  rm bin\\termux-url-opener
+if [[ -e ~/bin/termux-url-opener ]]; then
+  rm ~/bin/termux-url-opener
 fi 
 
 #Installing dependencies
@@ -22,4 +22,4 @@ curl -L https://raw.githubusercontent.com/LZNOXP/termux-ytdl/main/termux-url-ope
 chmod +x ./bin/termux-url-opener
 curl -L https://raw.githubusercontent.com/LZNOXP/termux-ytdl/main/simple-ytdl.py > "simple-ytdl.py"
 read -p "Where should the downloaded video be saved? : " path
-python3 ./simple-ytdl.py -p "$path"
+python3 ~/simple-ytdl.py -p "$path"
