@@ -12,8 +12,11 @@ if [[ -e ~/bin/termux-url-opener ]]; then
   rm ~/bin/termux-url-opener
 fi 
 
+#Updates and upgrades termux packages
+apt update && apt upgrade -y 
+
 #Installing dependencies
-#pkg update -y && pkg install python -y && pkg install ffmpeg -y && pip install youtube-dl
+pkg install python -y && pkg install ffmpeg -y && pip install youtube-dl
 
 curl -L https://raw.githubusercontent.com/LZNOXP/termux-ytdl/main/termux-url-opener > "./bin/termux-url-opener"
 chmod +x ./bin/termux-url-opener
