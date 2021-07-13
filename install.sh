@@ -13,7 +13,8 @@ if [[ -e ~/bin/termux-url-opener ]]; then
 fi 
 
 #Updates and upgrades termux packages
-apt update && apt upgrade
+#apt update && apt upgrade
+pkg update -y
 
 #Installing dependencies
 pkg install python -y && pkg install ffmpeg -y && pip install youtube-dl
