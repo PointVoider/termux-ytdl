@@ -2,7 +2,7 @@
 
 # Basic setup
 termux-setup-storage
-sleep 5
+sleep 2
 
 #Clean Install
 if [[ ! -d ~/bin ]]; then
@@ -13,7 +13,7 @@ if [[ -e ~/bin/termux-url-opener ]]; then
 fi 
 
 #Updates and upgrades termux packages
-apt update && apt upgrade -y 
+apt update && apt upgrade
 
 #Installing dependencies
 pkg install python -y && pkg install ffmpeg -y && pip install youtube-dl
