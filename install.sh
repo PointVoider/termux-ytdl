@@ -24,5 +24,6 @@ pip install youtube-dl
 
 
 echo -n "Where should the downloaded video be saved? : ";
-read;
-python3 ~/simple-ytdl.py -p "$REPLY"
+sleep 2
+read path;
+python3 ~/simple-ytdl.py -p "$path"
