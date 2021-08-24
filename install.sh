@@ -18,4 +18,4 @@ curl -L https://raw.githubusercontent.com/LZNOXP/termux-ytdl/main/simple-ytdl.py
 
 
 # one liner because this script somehow doesn't reach the read command
-apt-get update && apt-get -y install python ffmpeg && pip install youtube-dl && read -p "Where should the downloaded video be saved? : " path && echo "$path" && python3 ~/simple-ytdl.py -p "$path"
+apt-get update && apt-get -y install python ffmpeg && pip install youtube-dl colorama && python3 ~/simple-ytdl.py --setup
